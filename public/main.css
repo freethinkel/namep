@@ -1,0 +1,102 @@
+* {
+	font-family: "Google", sans-serif;
+}
+
+body {
+	background-color: #666;
+	margin: 0;
+	overflow: hidden;
+}
+
+.background {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.background::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 1;
+}
+
+.content-wrapper-wrapper {
+	padding: 0 10px;
+	z-index: 2;
+}
+
+.content-wrapper {
+	background-color: rgba(255,255,255,0.4);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	padding: 20px 40px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 0 15px;
+}
+
+.title input {
+	font-size: 50px;
+	font-weight: 900;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	text-align: center;
+	max-width: 500px;
+	min-width: 200px;
+	width: 100%;
+}
+
+.description {
+	color: #fff;
+	margin-top: 10px;
+	font-weight: 100;
+	font-size: 14px;
+	text-align: center;
+}
+
+::selection {
+	background-color: rgba(255,255,255,0.2);
+	color: #333;
+}
+
+@media (min-width: 400px) {
+	.title input {
+		font-size: 32px;
+	}
+}
+
+
+.none {
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+.show-error {
+	position: relative;
+}
+.show-error::after {
+	content: 'Введите имя длинее';
+	position: absolute;
+	top: -10px;
+	background-color: #f77;
+	color: #fff;
+	right: 35px;
+	border-radius: 10em;
+	padding: 5px 15px;
+	font-size: 12px;
+}

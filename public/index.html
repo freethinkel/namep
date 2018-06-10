@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="loader.css">
+	<link rel="stylesheet" href="./assets/fonts.css">
+</head>
+<body>
+	<div class="content">
+		<div class="background" style="background-image: url('https://source.unsplash.com/random')">
+			<div class="content-wrapper-wrapper">
+				<div class="content-wrapper">
+					<div class="title">
+						<input type="text" class="title-input">
+					</div>
+					<div class="description">тест</div>			
+				</div>
+			</div>
+	
+		</div>
+	</div>
+	<div class="loader">
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<defs>
+				<filter id="gooey">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+					<feBlend in="SourceGraphic" in2="goo"></feBlend>
+				</filter>
+			</defs>
+		</svg>
+		<div class="blob blob-0"></div>
+		<div class="blob blob-1"></div>
+		<div class="blob blob-2"></div>
+		<div class="blob blob-3"></div>
+		<div class="blob blob-4"></div>
+		<div class="blob blob-5"></div>
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+</html>
