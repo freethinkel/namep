@@ -1,5 +1,5 @@
 var rusMonth = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
-var host = 'http://localhost:3000/';
+var host = 'http://namep.herokuapp.com/';
 
 document.addEventListener('DOMContentLoaded', function() {
 	toggleContent(false);
